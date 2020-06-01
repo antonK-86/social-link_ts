@@ -1,0 +1,207 @@
+/*для формы изменения профиля*/
+.edit-profile {
+  width: 50%;
+  margin: 0 auto;
+  color: $clrtext;
+  font-size: 1.3rem;
+  font-weight: $fw;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  .editForm__form-container {
+    display: flex;
+    .editForm-item {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .editForm__field {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.editForm__close {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  img {
+    display: block;
+  }
+  &:hover {
+    background-color: rgb(207, 204, 204);
+  }
+}
+
+.editForm__field_checkbox {
+  position: relative;
+  top: 2px;
+  input {
+    color: rgb(131, 60, 60);
+  }
+}
+
+.editForm__field_user-img {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  img {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.editForm__field_input-file {
+  display: none;
+}
+
+.editForm__field_file-upload {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 80px;
+  height: 25px;
+  background-color: $clrback;
+  color: $clr;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  &:hover {
+    background: $clrbackhov;
+  }
+  & span {
+    line-height: 1.1rem;
+    font-size: 1.1rem;
+  }
+  & label {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+.editForm__field {
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.editForm__field_error {
+  position: absolute;
+  color: rgb(170, 58, 43);
+  font-size: 1.3rem;
+  font-weight: 500;
+  top: 0;
+  left: 60px;
+  right: -100px;
+}
+
+.input-profile,
+.textarea-profile {
+  position: relative;
+}
+
+.textarea-profile {
+  width: 100%;
+  height: 60px;
+  textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    outline: none;
+    resize: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: rgb(73, 50, 31);
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+}
+
+.input-profile input {
+  max-width: 200px;
+  height: 30px;
+  padding: 0 5px;
+  outline: none;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: rgb(73, 50, 31);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.error-profile input {
+  border: 1px solid red;
+}
+
+.profile__textError {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  font-size: 12px;
+  color: crimson;
+}
+
+.textError_teaxtarea {
+  top: 60px;
+}
+
+.btn-block {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.edit-profile__btn {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.editForm__field_span {
+  text-align: start;
+}
+
+.editForm-item__contact {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+.editForm-contacts {
+  margin: 0 0 20px;
+}

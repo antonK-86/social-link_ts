@@ -1,0 +1,102 @@
+.users-page {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $clrback;
+  }
+  .side-form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    .side-form__search-users {
+      height: 32px;
+      display: flex;
+      width: max-content;
+      input {
+        height: 30px;
+        padding: 2px 5px;
+        font-size: 1.2rem;
+        border: 1px solid #d9d9d9;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+    }
+    .side-form__show-friends {
+      color: rgb(41, 41, 94);
+      font-size: $fsl;
+      font-weight: $fw;
+      text-align: center;
+      .side-form__show-friends_item {
+        margin-right: 10px;
+        &:hover {
+          color: $clrbackhov;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+.users-container {
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  justify-content: space-between;
+  padding: 50px 20px 0 20px;
+  a {
+    text-decoration: none;
+  }
+  .users-page__user-item {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    cursor: pointer;
+    overflow: hidden;
+    color: $clrtext;
+    font-size: $fsl;
+    font-weight: 500;
+    background-color: #e8ebee;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+
+    &:hover {
+      box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+    .users-page__user-item_photo {
+      overflow: hidden;
+      margin: 5px auto;
+      height: 100px;
+      width: 100px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      & img {
+        display: block;
+      }
+    }
+    .users-page__user-item_mod {
+      color: $clrback;
+      font-size: 1.4rem;
+    }
+  }
+}

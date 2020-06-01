@@ -1,0 +1,148 @@
+.profile {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  font-size: $fs;
+  color: $clrtext;
+  .profile__avatar {
+    display: block;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    img: {
+      display: block;
+    }
+  }
+  .profile__btn {
+    display: inline-block;
+  }
+  .profile__info {
+    margin-left: 30px;
+    p {
+      margin: 5px;
+      font-weight: 400;
+    }
+    .profile__info_name {
+      font-weight: 700;
+    }
+    .profile__info_status {
+      font-weight: 500;
+      color: rgb(112, 104, 104);
+    }
+    .profile__info_about-me span {
+      font-weight: 500;
+      color: rgb(112, 104, 104);
+    }
+    .profile__info_contacts a {
+      text-decoration: none;
+      color: rgb(112, 104, 104);
+      font-weight: 600;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .profile__info_about-me,
+    .profile__info_contacts {
+      text-align: start;
+    }
+    .contacts {
+      display: flex;
+      padding-left: 0;
+      .li-none {
+        display: none;
+      }
+      li {
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+        .link-disabled {
+          pointer-events: none; /* делаем ссылку некликабельной */
+          cursor: default; /* устанавливаем курсор в виде стрелки */
+        }
+
+        .prompt-link {
+          display: none;
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          right: 0;
+          font-weight: 600;
+          font-size: 1.2rem;
+          color: darkgray;
+        }
+        &:hover .prompt-link {
+          display: inline;
+        }
+      }
+    }
+    .icon {
+      display: inline-block;
+      margin-right: 10px;
+      width: 32px;
+      height: 32px;
+    }
+    .icon-facebook {
+      background-image: url(../images/icons.png);
+      background-position: -32px 0px;
+      &:hover {
+        background-position: -96px 0px;
+      }
+    }
+    .icon-github {
+      background-image: url(../images/icons.png);
+      background-position: 0px -32px;
+      &:hover {
+        background-position: -32px -32px;
+      }
+    }
+    .icon-instagram {
+      background-image: url(../images/icons.png);
+      background-position: -64px 0px;
+      &:hover {
+        background-position: -64px -32px;
+      }
+    }
+    .icon-mainLink {
+      background-image: url(../images/icons.png);
+      background-position: -32px -64px;
+      &:hover {
+        background-position: 0px 64px;
+      }
+    }
+    .icon-twitter {
+      background-image: url(../images/icons.png);
+      background-position: -96px -32px;
+      &:hover {
+        background-position: -96px -64px;
+      }
+    }
+    .icon-vk {
+      background-image: url(../images/icons.png);
+      background-position: 0px -96px;
+      &:hover {
+        background-position: -32px -96px;
+      }
+    }
+    .icon-website {
+      background-image: url(../images/icons.png);
+      background-position: -64px -96px;
+      &:hover {
+        background-position: -96px -96px;
+      }
+    }
+    .icon-youtube {
+      background-image: url(../images/icons.png);
+      background-position: -128px 0px;
+      &:hover {
+        background-position: -128px -32px;
+      }
+    }
+  }
+}
