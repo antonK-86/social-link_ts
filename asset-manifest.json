@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4716d715.chunk.css",
+    "main.js": "/static/js/main.8ec59f5a.chunk.js",
+    "main.js.map": "/static/js/main.8ec59f5a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.12144d2d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.12144d2d.js.map",
+    "static/js/2.fce11179.chunk.js": "/static/js/2.fce11179.chunk.js",
+    "static/js/2.fce11179.chunk.js.map": "/static/js/2.fce11179.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.380d207fc2ae473581f11b11f3d50814.js": "/precache-manifest.380d207fc2ae473581f11b11f3d50814.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4716d715.chunk.css.map": "/static/css/main.4716d715.chunk.css.map",
+    "static/js/2.fce11179.chunk.js.LICENSE.txt": "/static/js/2.fce11179.chunk.js.LICENSE.txt",
+    "static/media/DemoWorks.module.css": "/static/media/surf.4bc76afb.jpg",
+    "static/media/cancel.svg": "/static/media/cancel.84c41ccb.svg",
+    "static/media/main.scss": "/static/media/icons.ca558d26.png",
+    "static/media/preloader.svg": "/static/media/preloader.30d7b91d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12144d2d.js",
+    "static/js/2.fce11179.chunk.js",
+    "static/css/main.4716d715.chunk.css",
+    "static/js/main.8ec59f5a.chunk.js"
+  ]
+}
