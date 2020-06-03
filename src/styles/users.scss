@@ -12,7 +12,6 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
     right: 10px;
     top: 20px;
     .side-form__search-users {
@@ -98,5 +97,46 @@
       color: $clrback;
       font-size: 1.4rem;
     }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .users-container {
+    grid-template-columns: repeat(4, 23%);
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .users-container {
+    grid-template-columns: repeat(3, 28%);
+  }
+  .users-page {
+    .side-form {
+      align-items: flex-end;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .users-container {
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+  }
+  .users-page {
+    .side-form {
+      align-items: center;
+      position: relative;
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .users-container {
+    grid-template-columns: repeat(1, 200px);
   }
 }

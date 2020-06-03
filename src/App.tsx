@@ -11,6 +11,7 @@ import UsersContainer from "./components/users/UsersContainer";
 import ProfileContainerHoc from "./components/profile/ProfileContainer";
 import DemoWorks from "./components/demoworks/DemoWorks";
 import TestCont from "./components/test/TestCont";
+import About from "./components/about/About";
 interface PropsType {
   initialized: boolean;
   initApp: () => void;
@@ -26,10 +27,11 @@ const App: React.FC<PropsType> = ({ initApp, initialized }) => {
       <Header />
       <div className="container">
         <Switch>
-          <Route exact path="/" render={() => <ProfileContainerHoc />} />
+          <Route exact path="/" render={() => <About />} />
+          <Route path="/about" component={About} />
           <Route path="/users" render={() => <UsersContainer />} />
           <Route path="/demoworks" component={DemoWorks} />
-          <Route path="/test" render={() => <TestCont />} />
+          {/*<Route path="/test" render={() => <TestCont />} />*/}
           <Route
             path="/profile/:userId?"
             render={() => <ProfileContainerHoc />}

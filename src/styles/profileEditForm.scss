@@ -205,3 +205,27 @@
 .editForm-contacts {
   margin: 0 0 20px;
 }
+
+@media only screen and (max-width: 568px) {
+  .editForm .editForm__form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textarea-profile textarea {
+    width: auto;
+  }
+  .editForm-item__contact {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .editForm-contacts {
+    margin: 0;
+    padding: 0;
+  }
+  .btn-block {
+    width: auto;
+  }
+  .editForm__close {
+    right: -50px;
+  }
+}

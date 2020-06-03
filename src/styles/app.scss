@@ -19,3 +19,9 @@
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    max-width: 90%;
+  }
+}

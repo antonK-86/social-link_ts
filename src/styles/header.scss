@@ -33,6 +33,11 @@
     -ms-transition: all linear 0.2s;
     -o-transition: all linear 0.2s;
   }
+  .navbar__nav-link_about {
+    margin-right: 80px;
+    text-transform: none;
+    font-size: 1.5rem;
+  }
 }
 
 .header__sign a {
@@ -79,6 +84,39 @@
     }
     &:hover .svg-out_2196f3 {
       fill: #aecfe9;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    .navbar__nav-link,
+    .header__sign {
+      font-size: 1.6rem;
+    }
+    .navbar__nav-link_about {
+      margin-right: 40px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .navbar {
+    .navbar__nav-link,
+    .header__sign {
+      font-size: 1.3rem;
+      padding: 6px 12px;
+    }
+    .navbar__nav-link_about {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+  }
+  .header__signOut {
+    .header__signOut_login {
+      font-size: 1.2rem;
+      margin-right: 15px;
     }
   }
 }

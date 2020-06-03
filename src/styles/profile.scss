@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  padding: 40px;
+  padding: 40px 0;
   font-size: $fs;
   color: $clrtext;
   .profile__avatar {
@@ -143,6 +143,28 @@
       &:hover {
         background-position: -128px -32px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .profile {
+    flex-direction: column;
+    .profile__avatar {
+      margin-bottom: 25px;
+    }
+    .profile__info {
+      margin-top: 25px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .profile {
+    width: 90%;
+    .contacts {
+      flex-wrap: wrap;
     }
   }
 }

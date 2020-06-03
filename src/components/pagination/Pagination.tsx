@@ -55,7 +55,8 @@ const Pagination = (props: PropsType) => {
     <span
       key={p}
       className={
-        "pagination__item " + (props.numPage === p && "pagination__item_active")
+        "pagination__item_el " +
+        (props.numPage === p && "pagination__item_active")
       }
       onClick={() => props.nextUsersOnPage(p)}
     >
@@ -65,56 +66,60 @@ const Pagination = (props: PropsType) => {
 
   return (
     <div className="pagination">
-      {props.numPage > cntDisplayedPages ? (
-        <span
-          className="pagination__item pagination__item_text"
-          onClick={surfOnPages.fistPage}
-        >
-          Start
-        </span>
-      ) : (
-        <span className="pagination__item pagination__item_text pagination__item_disabled">
-          Start
-        </span>
-      )}
-      {props.numPage > cntDisplayedPages ? (
-        <span
-          className="pagination__item pagination__item_text"
-          onClick={surfOnPages.prev}
-        >
-          Prev
-        </span>
-      ) : (
-        <span className="pagination__item pagination__item_text pagination__item_disabled">
-          Prev
-        </span>
-      )}
-      {pages}
-      {props.numPage > props.countPages - cntDisplayedPages ? (
-        <>
-          <span className="pagination__item pagination__item_text pagination__item_disabled">
-            Next
-          </span>
-          <span className="pagination__item pagination__item_text pagination__item_disabled">
-            Last
-          </span>
-        </>
-      ) : (
-        <>
+      <div className="pagination__item">
+        {props.numPage > cntDisplayedPages ? (
           <span
-            className="pagination__item pagination__item_text"
-            onClick={surfOnPages.next}
+            className="pagination__item_el pagination__item_text"
+            onClick={surfOnPages.fistPage}
           >
-            Next
+            Start
           </span>
+        ) : (
+          <span className="pagination__item_el pagination__item_text pagination__item_disabled">
+            Start
+          </span>
+        )}
+        {props.numPage > cntDisplayedPages ? (
           <span
-            className="pagination__item pagination__item_text"
-            onClick={surfOnPages.lastPage}
+            className="pagination__item_el pagination__item_text"
+            onClick={surfOnPages.prev}
           >
-            Last
+            Prev
           </span>
-        </>
-      )}
+        ) : (
+          <span className="pagination__item_el pagination__item_text pagination__item_disabled">
+            Prev
+          </span>
+        )}
+      </div>
+      <div className="pagination__item">{pages}</div>
+      <div className="pagination__item">
+        {props.numPage > props.countPages - cntDisplayedPages ? (
+          <>
+            <span className="pagination__item_el pagination__item_text pagination__item_disabled">
+              Next
+            </span>
+            <span className="pagination__item_el pagination__item_text pagination__item_disabled">
+              Last
+            </span>
+          </>
+        ) : (
+          <>
+            <span
+              className="pagination__item_el pagination__item_text"
+              onClick={surfOnPages.next}
+            >
+              Next
+            </span>
+            <span
+              className="pagination__item_el pagination__item_text"
+              onClick={surfOnPages.lastPage}
+            >
+              Last
+            </span>
+          </>
+        )}
+      </div>
     </div>
   );
 };
