@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/social-link_ts/static/css/main.ffa5e9ba.chunk.css",
-    "main.js": "/social-link_ts/static/js/main.17b3cef3.chunk.js",
-    "main.js.map": "/social-link_ts/static/js/main.17b3cef3.chunk.js.map",
+    "main.js": "/social-link_ts/static/js/main.4f0e6129.chunk.js",
+    "main.js.map": "/social-link_ts/static/js/main.4f0e6129.chunk.js.map",
     "runtime-main.js": "/social-link_ts/static/js/runtime-main.7b798649.js",
     "runtime-main.js.map": "/social-link_ts/static/js/runtime-main.7b798649.js.map",
     "static/css/2.a2026422.chunk.css": "/social-link_ts/static/css/2.a2026422.chunk.css",
-    "static/js/2.01d360ae.chunk.js": "/social-link_ts/static/js/2.01d360ae.chunk.js",
-    "static/js/2.01d360ae.chunk.js.map": "/social-link_ts/static/js/2.01d360ae.chunk.js.map",
+    "static/js/2.21d92b1a.chunk.js": "/social-link_ts/static/js/2.21d92b1a.chunk.js",
+    "static/js/2.21d92b1a.chunk.js.map": "/social-link_ts/static/js/2.21d92b1a.chunk.js.map",
     "index.html": "/social-link_ts/index.html",
-    "precache-manifest.8ba1df60d16186b71fc56e5a69f1cc8b.js": "/social-link_ts/precache-manifest.8ba1df60d16186b71fc56e5a69f1cc8b.js",
+    "precache-manifest.dcd27495a6e24dda020c21e18beaef39.js": "/social-link_ts/precache-manifest.dcd27495a6e24dda020c21e18beaef39.js",
     "service-worker.js": "/social-link_ts/service-worker.js",
     "static/css/2.a2026422.chunk.css.map": "/social-link_ts/static/css/2.a2026422.chunk.css.map",
     "static/css/main.ffa5e9ba.chunk.css.map": "/social-link_ts/static/css/main.ffa5e9ba.chunk.css.map",
-    "static/js/2.01d360ae.chunk.js.LICENSE.txt": "/social-link_ts/static/js/2.01d360ae.chunk.js.LICENSE.txt",
+    "static/js/2.21d92b1a.chunk.js.LICENSE.txt": "/social-link_ts/static/js/2.21d92b1a.chunk.js.LICENSE.txt",
     "static/media/DemoWorks.module.css": "/social-link_ts/static/media/surf.4bc76afb.jpg",
     "static/media/cancel.svg": "/social-link_ts/static/media/cancel.84c41ccb.svg",
     "static/media/main.scss": "/social-link_ts/static/media/icons.ca558d26.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.7b798649.js",
     "static/css/2.a2026422.chunk.css",
-    "static/js/2.01d360ae.chunk.js",
+    "static/js/2.21d92b1a.chunk.js",
     "static/css/main.ffa5e9ba.chunk.css",
-    "static/js/main.17b3cef3.chunk.js"
+    "static/js/main.4f0e6129.chunk.js"
   ]
 }
